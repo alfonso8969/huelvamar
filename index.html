@@ -1,116 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Huelvamar - Langostinos de Huelva</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <style>
-      /* Estilos para la barra de navegación */
-
-      header {
-        background-image: url(images/cabecera.jpg);
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 500px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-      }
-
-      header {
-        position: relative;
-        height: 300px;
-        color: white;
-        text-align: center;
-        background-size: cover;
-        padding: 20px;
-      }
-
-      .header-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
-
-      .divider {
-        width: 100%;
-        height: 2px;
-        color: #fff;
-        margin: 20px 0;
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #f8f8f8;
-      }
-
-      .nav-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-      }
-
-      .nav-links li {
-        margin: 0 15px;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #333;
-      }
-
-      .nav-links a:hover {
-        color: #007bff;
-      }
-
-      .btn-conocenos {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: transparent;
-        color: white;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div>
           <img
+            class="logo"
             src="images/logo-huelvamar-blanco.png"
             alt="Huelvamar - Langostinos de Huelva"
-          />
+          >
         </div>
         <div class="nav-links">
-
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Comprar langostino vivo</a></li>
-            <li><a href="#">Cómo funciona</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><img src="images/bandera-inglaterra.png" alt="Bandera de Inglaterra"></li>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Comprar langostino vivo</a>
+            </li>
+            <li>
+              <a href="#">Cómo funciona</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+            <li>
+              <img
+                src="images/bandera-inglaterra.png"
+                alt="Bandera de Inglaterra"
+              >
+            </li>
           </ul>
         </div>
       </nav>
-      <hr class="divider" />
+      <hr class="divider">
       <div class="header-content">
-        <h1>LLangostino vivo de Huelva, en tu casa
-
-CONÓCENOS</h1>
+        <h1>Langostino vivo de Huelva, en tu casa</h1>
         <p>Fresco, sostenible y recogido para ti</p>
-        <a class="btn-conocenos" href="">CONÓCENOS</a>
+        <a class="btn" href="#">CONÓCENOS</a>
       </div>
     </header>
+    <main class="main-content">
+      <section id="buy">
+        <div class="buy-text">
+          <h2>Llevamos el sabor más fresco del mar a tu hogar</h2>
+          <p>
+            Huelvamar te ofrece el mejor langostino vivo a domicilio,
+            seleccionado y envasado por nuestros expertos el mismo día que lo
+            enviamos.
+          </p>
+          <p>Desde Huelva, a tu mesa.</p>
+          <a class="btn-buy" href="#">COMPRA AHORA</a>
+        </div>
+        <div class="buy-image image-container">
+          <img src="images/plato-langostinos.jpg" alt="Langostinos cocidos">
+        </div>
+      </section>
+      <section id="company">
+        <h2>La mejor calidad en langostinos</h2>
+        <aside id="company-info">
+          <div class="company-info-text">
+            <h2>Mucho más que marisco</h2>
+            <p>
+              Garantizamos la calidad y frescura de tu producto desde su cría
+              hasta su recepción.
+            </p>
+          </div>
+          <hr class="buy-divider">
+          <div class="four-elements">
+            <div class="element1">
+              <img src="images/icon-ancla.png" alt="Tradición y experiencia">
+              <p>Tradición</p>
+              <p>
+                Más de 15 años de tradición familiar acercando el sabor único de
+                Huelva a cada rincón avalan nuestro buen hacer.
+              </p>
+            </div>
+            <div class="element2">
+              <img src="images/icon-frescura.png" alt="Frescura">
+              <p>Frescura</p>
+              <p>
+                Nuestro proceso de envasado garantiza la entrega del langostino
+                vivo para que disfrutes de su máximo sabor.
+              </p>
+            </div>
+            <div class="element3">
+              <img src="images/icon-dedicacion.png" alt="Dedicación">
+              <p>Experiencia</p>
+              <p>
+                Estamos especializados en un único producto. Criamos y te
+                hacemos llegar el mejor langostino vivo.
+              </p>
+            </div>
+            <div class="element4">
+              <img src="images/icon-sostenibilidad.png" alt="Sostenibilidad">
+              <p>Sostenibilidad</p>
+              <p>
+                Nuestros procesos de cría selectiva evitan las redes de arrastre
+                y otras técnicas invasivas habituales en la pesca extractiva.
+                Velamos por el ecosistema marino.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <section id="transport">
+        <div class="transport-columns">
+          <div class="transport-column">
+            <div class="transport-icon">
+              <img src="images/icon-express.png" alt="Envío express gratuito">
+            </div>
+            <div class="transport-text">
+              <h3>Envío express gratuito</h3>
+              <p>
+                Recibe tu langostino vivo a domicilio en menos de 48 horas o
+                cuando tú elijas, sin gastos de envío.
+              </p>
+            </div>
+          </div>
+          <div class="transport-column">
+            <div class="transport-icon">
+              <img
+                src="images/icon-garantizado.png"
+                alt="Garantía de calidad"
+              >
+            </div>
+            <div class="transport-text">
+              <h3>Frescura garantizada</h3>
+              <p>
+                Langostino capturado diariamente y llevado a tu mesa en avión y
+                almacenado siempre refrigerado.
+              </p>
+            </div>
+          </div>
+          <div class="transport-column">
+            <div class="transport-icon">
+              <img
+                src="images/icon-sostenible.png"
+                alt="Cría y captura sostenible"
+              >
+            </div>
+            <div class="transport-text">
+              <h3>Cría y captura sostenible</h3>
+              <p>
+                Nuestros métodos de cría y captura son sostenibles y respetuosos
+                con el medio ambiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="our-process">
+          <div class="process-container">
+            <h2>Nuestros procesos</h2>
+            <p>
+              Nuestro sistema de cría, selección y entrega garantiza la calidad
+              y las condiciones óptimas de tu marisco. Te invitamos a conocer
+              cómo funciona nuestro servicio de venta de langostino vivo a
+              domicilio.
+            </p>
+            <a class="btn-process" href="#">CÓMO FUNCIONA</a>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer-column">
+
+          <div>
+            <h2>Compra ahora tu caja de langostino vivo</h2>
+            <p>
+              Y recíbela en tu casa con todas las garantías de calidad y frescura
+              de Huelvamar
+            </p>
+          </div>
+          <div>
+            <a class="btn-offer" href="#">COMPRAR</a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <img src="images/logo-huelvamar-colores.png" alt="Logo Huelvamar" class="footer-logo" >
+        <hr class="footer-divider">
+        <address>
+          <p>Finca El Dique</p>
+          <p>21400, Ayamonte</p>
+          <p>Huelva</p>
+          <p><a href="tel:+34959104224">Tel. 959 104 224</a></p>
+          <p><a href="mailto:langostinovivo@huelvamar.com">langostinovivo@huelvamar.com</a></p>
+        </address>
+        <hr class="footer-divider">
+        <ul class="footer-links">
+          <li>
+            <a href="#">&copy; Gambalucía, S.L.</a>
+          </li>
+          <li>
+            <a href="#">Todos los derechos reservados</a>
+          </li>
+          <li>
+            <a href="#">Aviso legal</a>
+          </li>
+          <li>
+            <a href="#">Política de cookies</a>
+          </li>
+          <li>
+            <a href="#">Protección de datos</a>
+          </li>
+        </ul>
+      </footer>
+    </main>
   </body>
 </html>

@@ -1,0 +1,374 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+header {
+    background-image: url(../images/cabecera.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+header {
+    position: relative;
+    height: 300px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.header-content {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-content h1 {
+    padding: 10px;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+}
+
+.navbar .logo {
+    height: 20px;
+    margin-left: 200px;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 200px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd6d6;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.main-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#buy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px 50px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.buy-text {
+    padding: 150px 100px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.buy-image {
+    padding: 150px 120px;
+}
+
+.buy-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.buy-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#company {
+    background-image: url(../images/caja-langostinos.jpg);
+    background-color: #cccccc;
+    width: 40%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#company aside {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+#company aside h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#company aside p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.company-info-text {
+    padding: 20px;
+}
+
+.four-elements {
+    /* Estilos para el contenedor de los cuatro elementos */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas iguales */
+    grid-template-rows: 1fr 1fr;
+    /* Dos filas iguales */
+    height: 300px;
+    /* O cualquier altura deseada */
+    margin-top: 30px;
+}
+
+.element1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-right: 19px;
+}
+
+.element2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-left: 60px;
+}
+
+.element3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-right: 19px;
+}
+
+.element4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding-left: 60px;
+}
+
+.buy-divider {
+    width: 70%;
+    height: 1px;
+    color: #131212;
+}
+
+#transport {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #e6e6eb;
+    border-radius: 10px;
+}
+
+.transport-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
+}
+
+.transport-column {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.transport-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.transport-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.transport-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.our-process {
+    background-image: url(../images/fondo-nuestros-procesos.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+.our-process h2 {
+    color: #141414;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.our-process p {
+    color: #141414;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.process-container {
+    margin-top: 60px;
+    margin-left: 50px;
+    max-width: 40%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.btn-process {
+    padding: 17px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 160px;
+    height: 25px;
+}
+
+.offer {
+    background-color: rgb(39, 38, 38);
+    height: 200px;
+}
+
+.offer-column {
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.offer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.offer-column p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-offer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.btn-offer:hover {
+    background-color: white;
+    color: black;
+}
+
+address a {
+    text-decoration: none;
+    color: rgb(47, 26, 231);
+}
+
+footer {
+    background-color: #f8f0f0;
+    color: rgb(27, 27, 27);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-divider {
+    width: 20%;
+    height: 1px;
+    color: #131212;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {  
+    display: contents;
+    padding: 10px 15px;
+}
+
+.footer-links a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-links li + li::before {
+    padding: 10px 10px;
+    content: '|';
+}
