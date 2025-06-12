@@ -253,6 +253,16 @@ header {
     height: 700px;
 }
 
+.process-container {
+    margin-top: 60px;
+    margin-left: 50px;
+    max-width: 40%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
 .our-process h2 {
     color: #141414;
     font-size: 2em;
@@ -265,25 +275,15 @@ header {
     margin-bottom: 30px;
 }
 
-.process-container {
-    margin-top: 60px;
-    margin-left: 50px;
-    max-width: 40%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-}
-
 .btn-process {
-    padding: 17px;
+    padding: 15px;
     background-color: transparent;
     color: black;
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid black;
-    width: 160px;
-    height: 25px;
+    width: 150px;
+    height: 20px;
 }
 
 .offer {
