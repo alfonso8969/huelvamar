@@ -6,6 +6,10 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Huelvamar - Langostinos de Huelva</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script
+      src="https://kit.fontawesome.com/6fbdbd90cc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -20,19 +24,19 @@
         <div class="nav-links">
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="#company">Inicio</a>
             </li>
             <li>
-              <a href="#">Comprar langostino vivo</a>
+              <a href="#buy">Comprar langostino vivo</a>
             </li>
             <li>
-              <a href="#">Cómo funciona</a>
+              <a href="#how-it-works">Cómo funciona</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#offer">Blog</a>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a href="#address-footer">Contacto</a>
             </li>
             <li>
               <img
@@ -174,7 +178,7 @@
           </div>
         </div>
       </section>
-      <section class="offer">
+      <section class="offer" id="offer">
         <div class="offer-column">
 
           <div>
@@ -189,10 +193,18 @@
           </div>
         </div>
       </section>
-      <footer>
+      
+    
+     <a title="Scroll to top" href="#top" id="scrollToTop"
+      ><i
+        class="fa fa-arrow-circle-o-up fa-xl"
+        aria-hidden="true"
+      ></i></a>
+  </main>
+    <footer>
         <img src="images/logo-huelvamar-colores.png" alt="Logo Huelvamar" class="footer-logo" >
         <hr class="footer-divider">
-        <address>
+        <address id="address-footer">
           <p>Finca El Dique</p>
           <p>21400, Ayamonte</p>
           <p>Huelva</p>
@@ -202,7 +214,7 @@
         <hr class="footer-divider">
         <ul class="footer-links">
           <li>
-            <a href="#">&copy; Gambalucía, S.L.</a>
+            <a href="#">&copy; Gambalucía, <span id="year"></span></a>
           </li>
           <li>
             <a href="#">Todos los derechos reservados</a>
@@ -218,6 +230,27 @@
           </li>
         </ul>
       </footer>
-    </main>
+       <script>
+      // Obtener el año actual
+      const currentYear = new Date().getFullYear();
+      // Asignar el año al elemento con el id "year"
+      document.getElementById("year").textContent = currentYear;
+      window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 100) {
+          document.getElementById("scrollToTop").style.display = "block";
+        } else {
+          document.getElementById("scrollToTop").style.display = "none";
+        }
+      });
+
+      document
+        .getElementById("scrollToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
   </body>
 </html>

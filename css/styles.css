@@ -353,7 +353,7 @@ footer {
     padding: 0;
 }
 
-.footer-links li {  
+.footer-links li {
     display: contents;
     padding: 10px 15px;
 }
@@ -368,7 +368,29 @@ footer {
     color: #007bff;
 }
 
-.footer-links li + li::before {
+.footer-links li+li::before {
     padding: 10px 10px;
     content: '|';
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: none;
+    /* Inicialmente oculto */
+}
+
+#scrollToTop:hover {
+    background-color: #3e8e41;
+}
+
+.fa-xl {
+    font-size: 1.5em;
+    color: white;
 }
