@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Huelvamar - Langostinos de Huelva</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Estilos para la barra de navegación */
+
+      header {
+        background-image: url(images/cabecera.jpg);
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 500px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+      }
+
+      header {
+        position: relative;
+        height: 300px;
+        color: white;
+        text-align: center;
+        background-size: cover;
+        padding: 20px;
+      }
+
+      .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      .divider {
+        width: 100%;
+        height: 2px;
+        color: #fff;
+        margin: 20px 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f8f8f8;
+      }
+
+      .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 0 15px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .nav-links a:hover {
+        color: #007bff;
+      }
+
+      .btn-conocenos {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <img
+            src="images/logo-huelvamar-blanco.png"
+            alt="Huelvamar - Langostinos de Huelva"
+          />
+        </div>
+        <div class="nav-links">
+
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Comprar langostino vivo</a></li>
+            <li><a href="#">Cómo funciona</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><img src="images/bandera-inglaterra.png" alt="Bandera de Inglaterra"></li>
+          </ul>
+        </div>
+      </nav>
+      <hr class="divider" />
+      <div class="header-content">
+        <h1>LLangostino vivo de Huelva, en tu casa
+
+CONÓCENOS</h1>
+        <p>Fresco, sostenible y recogido para ti</p>
+        <a class="btn-conocenos" href="">CONÓCENOS</a>
+      </div>
+    </header>
+  </body>
+</html>
