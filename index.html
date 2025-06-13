@@ -192,15 +192,11 @@
             <a class="btn-offer" href="#">COMPRAR</a>
           </div>
         </div>
-      </section>
-      
-    
-     <a title="Scroll to top" href="#top" id="scrollToTop"
-      ><i
-        class="fa fa-arrow-circle-o-up fa-xl"
-        aria-hidden="true"
-      ></i></a>
-  </main>
+      </section>          
+      <a title="Scroll to top" href="#top" id="scrollToTop">
+        <i class="fa fa-arrow-circle-o-up fa-xl" aria-hidden="true"></i>
+      </a>
+    </main>
     <footer>
         <img src="images/logo-huelvamar-colores.png" alt="Logo Huelvamar" class="footer-logo" >
         <hr class="footer-divider">
@@ -235,6 +231,8 @@
       const currentYear = new Date().getFullYear();
       // Asignar el año al elemento con el id "year"
       document.getElementById("year").textContent = currentYear;
+
+      // Mostrar el botón de scroll al inicio
       window.addEventListener("scroll", function () {
         if (document.documentElement.scrollTop > 100) {
           document.getElementById("scrollToTop").style.display = "block";
