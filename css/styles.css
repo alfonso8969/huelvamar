@@ -153,6 +153,7 @@ header {
     left: 150%;
     transform: translate(-50%, -50%);
     color: black;
+    width: 175%;
 }
 
 #company aside h2 {
@@ -266,7 +267,7 @@ header {
 .our-process h2 {
     color: #141414;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-top: 85px;
 }
 
 .our-process p {
