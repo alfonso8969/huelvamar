@@ -32,8 +32,9 @@ header {
 }
 
 .header-content h1 {
+    font-family: BlackBoard, sans-serif;
     padding: 10px;
-    font-size: 2.5em;
+    font-size: 4.5em;
     margin: 0;
 }
 
@@ -394,4 +395,11 @@ footer {
 .fa-xl {
     font-size: 1.5em;
     color: white;
+}
+
+section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
 }
